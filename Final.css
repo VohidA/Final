@@ -93,7 +93,7 @@ main {
 }
 
 .destination-card a {
-  text-decoration: none;
+  text-decoration: underline;
   transition: all 0.3s ease-out;
   color: #3498db;
   font-size: 18px;
