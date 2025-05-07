@@ -387,3 +387,48 @@ form {
     grid-template-columns: 1fr;
   }
 }
+
+/* Add this to your CSS file */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0 auto 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Improve header responsiveness */
+header {
+  padding: 20px 5%;
+}
+
+/* Make navigation more mobile-friendly */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Improve iframe general responsiveness */
+iframe {
+  max-width: 100%;
+}
